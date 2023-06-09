@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio Website</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <div class="cursor">
+        <div class="click-animation">
+            <div class="shape circle big"></div>
+            <div class="shape circle small"></div>
+            <div class="shape triangle yellow"></div>
+            <div class="shape triangle green"></div>
+            <div class="shape disc"></div>
+        </div>
+    </div>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+        <defs>
+            <linearGradient id="bg">
+                <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+                <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+                <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+            </linearGradient>
+            <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+   s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+        </defs>
+        <g>
+            <use xlink:href='#wave' opacity=".3">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s"
+                    calcMode="spline" values="270 230; -334 180; 270 230" keyTimes="0; .5; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+            </use>
+            <use xlink:href='#wave' opacity=".6">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s"
+                    calcMode="spline" values="-270 230;243 220;-270 230" keyTimes="0; .6; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+            </use>
+            <use xlink:href='#wave' opacty=".9">
+                <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s"
+                    calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+            </use>
+        </g>
+    </svg>
+
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Rana Mondal</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>An enthusiastic Coder and avid learner.  I have a strong foundation in Python, Java, machine learning, and data science.  </p>
+            <div class="social-media">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/ranaa_1409/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/rana-mondal-43467926b/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="MY PHOTO.jpg" alt="">
+        </div>
+
+        <!-- --------------------------------------------------------------- -->
+
+    </section>
+
+
+
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="MY PHOTO2.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span> </h2>
+            <p>
+                As a motivated computer science undergraduate, I possess a diverse skill set with expertise in web
+                development, including proficiency in React, Bootstrap, and responsive design. Additionally, I have a
+                strong foundation in Python, Java, machine learning, and data science. With a passion for technology and
+                an eagerness to learn, I am excited to contribute my skills and knowledge to create innovative solutions
+                in the field of computer science.</p>
+        </div>
+        <a href="#" class="btn">Read More </a>
+    </section>
+
+    <section class="skills" id="skills">
+
+        <h2 class="heading"><span>Skills</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>Experienced in HTML, CSS and JavaScript, with proficiencyin frameworks like React. Skilled in
+                    creating responsive web designs , integrating APIs and database management to deliver functional and
+                    visually appealing websites.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Data Science</h3>
+                <p>Skilled in Implementing various machine leaning algorithms and frameworks like scikit - learn and
+                    TensorFlow . Experienced in Training models , performing data analytics , and leveraging predictive
+                    analytics to drive actionable insights and solutions.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="bx bx-bar-chart-alt"></i>
+                <h3>UI/UX</h3>
+                <p>I'm a enthusiastic and creative UX/UI Designer, which gives me a unique edge in empathizing with
+                    users and improving their experience through design. My research experience has refined my
+                    problem-solving skills and user insights. I'm constantly seeking new ways to learn and grow through
+                    real-world experiences</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="img1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Portfolio</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quo?</p>
+                    <a href="#"><i class='bs bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Netflix Clone</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Sapiente, quo?</p>
+                    <a href="#"><i class='bs bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Figma Project</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quo?</p>
+                    <a href="#"><i class='bs bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quo?</p>
+                    <a href="#"><i class='bs bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Discord-AI-Bot</h4>
+                    <p>Emdedded an AI bot in Discord Usinf Python Language and APIs</p>
+                    <a href="#"><i class='bs bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Machine Learning </h4>
+                    <>Experienced in ML, NLP, deep learning and data analysis. proficient in using TensorFlow, Scikit
+                        Learn , Apache Learning.</p>
+                        <a href="#"><i class='bs bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contact" id="Contact">
+
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="email" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Rana | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+
+
+    <!-------------------Scroll Reveal------------>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!------------typed js---------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="js/script.js"></script>
+
+
+
+
+    <!---------------------cursor------------------->
+    <script>
+        //Javascript for animate the cursor on mouse click
+        const cursorAnimation = document.querySelector(".cursor");
+        const cursors = document.querySelectorAll(".cursor");
+
+        document.addEventListener("click", (e) => {
+            let x = e.clientX;
+            let y = e.clientY;
+
+            cursorAnimation.style.top = y + "px";
+            cursorAnimation.style.left = x + "px";
+
+            cursors.forEach((cursor) => {
+                cursor.classList.add("active");
+
+                function removeCursorActive() {
+                    cursor.classList.remove("active");
+                }
+
+                setTimeout(removeCursorActive, 1000);
+            });
+
+            let cursorClone = cursorAnimation.cloneNode(true);
+            document.querySelector("body").appendChild(cursorClone);
+
+            setTimeout(() => {
+                cursorClone.remove();
+            }, 1000);
+        });
+
+    </script>
+
+</body>
+
+</html>
